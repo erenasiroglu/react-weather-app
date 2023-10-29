@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import City from './City';
+import City from './city';
 
 function App() {
   const key = "8551aad0492b5c93c3c2ef4b0d4ec834";
@@ -18,7 +18,7 @@ function App() {
       }
     }
     getAPI();
-  }, [search, setCity]); // Include setCity in the dependency array  
+  }, [search, setCity]);
   return (
     <div className="App">
       <input
